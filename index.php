@@ -1,7 +1,18 @@
 <?php
 
-echo '<p>Hello fmi. Get ready to hack.</p>';
+echo "<table>";
+for ($i = 1; $i < 10; $i++){
+    echo "<tr>";
+    for($j = 1; $j < 10; $j++){
+        if ($j == 1 || $i == 1) echo "<th>";
+        else echo "<td>";
+        $res = $i * $j;
+        echo "$res ";
+        if($j == 1 || $i == 1 )echo "</th>";
+        else echo "</td>";
+    }
+    echo "</tr>";
+}
 
-echo '<p>Pssst.. any fmi ideas go <a href="https://fss.fmi.uni-sofia.bg/za-nas/kutiq-za-idei/" target="_blank">here</a></p>';
-
+echo "</table>";
 ?>
