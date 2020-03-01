@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta content="text/html" http-equiv="Content-Type" />
+   <meta content="text/html"; charset=UTF-8" http-equiv="Content-Type" />
 	<title>Multiplication table</title>
 </head>
 <body>
