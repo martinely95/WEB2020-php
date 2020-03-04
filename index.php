@@ -44,66 +44,24 @@
   echo makeCoffee(null);    // Making a cup of .
   echo makeCoffee("mocha"); // Making a cup of mocha.
   ?>
-
-  <br/>
-
+  
   <?php
-  $arr = array(1, 2, 3, 4); // Indexed array
-  $arr = [1, 2, 3, 4];      // same
+  //Task1 - Table
+  echo "<table>";
 
-  foreach ($arr as $value) {
-  	echo $value;
+  //row
+  for($i=1; $i<10; $i++){  
+    echo "<tr>";
+    for($j=1; $j<10; $j++){
+      if($i == 1 || $j == 1){
+        echo "<th>" . $i*$j . "</th>";
+      } else{
+      echo "<td>" . $i*$j . "</td>";
+      }
+    }
+    echo "</tr>";
   }
-
-
-  echo "<br/>";
-
-  $array = array(           // Associative array
-  	"foo" => "bar",
-  	"bar" => "foo",
-  );
-
-  foreach ($arr as $key => $value) {
-  	echo "$key -> $value\n";
-  	echo "<br/>";
-  }
-  ?>
-
-  <br/>
-  <?php
-  var_dump($_SERVER);
-  echo "<br/>";
-  echo "<br/>";
-  var_dump($_GLOBALS);
-  echo "<br/>";
-  echo "<br/>";
-  var_dump($_SESSION);
-  echo "<br/>";
-  echo "<br/>";
-  var_dump($_GET);
-  echo "<br/>";
-  echo "<br/>";
-
-  print_r($_SERVER);   
-
-  $colors = array(           // Associative array
-  	"roses" => "red",
-  	"violets" => "blue",
-  );
-
-  $text = <<<EOF
-  Roses are {$colors['roses']},
-  Violets are {$colors['violets']}.
-  I know it is sad,
-  but you have homework to do.
-EOF;
-// do not forget to remove the indentation above... error 500
-
-  echo "<br/>";
-  echo "<br/>";
-
-  echo $text;
-  echo "<br/>";
+  echo "</table>";
   ?>
 </body>
 </html>
