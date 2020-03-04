@@ -1,5 +1,7 @@
 <?php
 
+/*------week 2, task 1
+
 echo "<table>";
 for ($i = 1; $i < 10; $i++){
     echo "<tr>";
@@ -15,4 +17,35 @@ for ($i = 1; $i < 10; $i++){
 }
 
 echo "</table>";
+
+*/
+
+
+
+
+
 ?>
+
+<!-- task 1
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Number Maker</title>
+    <style>
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+    }
+    </style>
+  </head>
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title Elective Courses></title>
+        <body>
+            
+        </body>
+    </head>
