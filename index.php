@@ -38,13 +38,13 @@ echo "</table>";
 
 <form>
     <label for="course-title">Име на предмета</label>
-        <input type="text" id="course-title" name="title">
+    <input type="text" id="course-title" name="title">
 	<br>
 	<label for="lecturer">Преподавател</label>
-        <input type="text" id="lecturer" name="lecturer">
+    <input type="text" id="lecturer" name="lecturer">
 	<br>
     <label for="description">Описание</label>
-        <input type="text" id="description" name="description">
+    <input type="text" id="description" name="description">
 	<br>
 	Група
 	<br>
@@ -57,7 +57,7 @@ echo "</table>";
 	<label> <input type="radio" name="group" value="core-cs">ЯКН</label>
 	<br>
 	<label for="credits">Кредити</label>
-	    <input type="number" id="credits" name="credits">
+	<input type="number" id="credits" name="credits">
 </form>
 
 <?php
