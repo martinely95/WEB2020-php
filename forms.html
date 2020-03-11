@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="bg">
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" >
+        <title> Форми </title>
+    </head>
+    <body>
+     <form method="post" action="forms.php">
+     <fieldset>
+     <legend> Информация за избираемата дисциплина </legend>
+        <label for="courseTitle">Име на курса:</label>
+         <input id="coursetitle" name="title" require> </br>
+        <label for ="teacherName">Име на преподавателя:</label>
+         <input id="teacherName" name="name" require ></br>
+        <label for ="description">Описание на курса:</label>
+         <input id="description" name="description" require ></br>
+        <label for ="group">Група:</label>
+        <select id="group" name="group">
+            <option value="М">М </option>
+            <option value="ПМ">ПМ </option>
+            <option value="ОКН">ОКН </option>
+            <option value="ЯКН">ЯКН </option>
+            </select></br>
+            <label for ="credits">Кредити:</label>
+        <input id="credits" name="credits"></br>
+        <input type="submit" name="submit">
+        <input type = "reset"  id = "reset" value = "reset"/>
+     </fieldset>
+     </form>
+    </body>
+</html>
