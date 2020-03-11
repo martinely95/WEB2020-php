@@ -38,6 +38,7 @@ $valid['description'] = $description;
 
 if (!$group) {
 $errors['group'] = 'Задължително трябва да изберете точно една група.';
+$valid['group'] = $group;
 }
 
 if (!$credits) {
@@ -49,15 +50,15 @@ $valid['credits'] = $credits;
 }
 
 fwrite($logfile, "Errors:\n");
-foreach($err as $errors)
+foreach($errors as $err)
 {
-	fwrite($logfile, $err);
+	fwrite($logfile, $err."\n");
 }
 
 fwrite($logfile, "Valid operations:\n");
-foreach($val as $valid)
+foreach($valid as $val)
 {
-	fwrite($logfile, $val);
+	fwrite($logfile, $val."\n");
 }
 
 }

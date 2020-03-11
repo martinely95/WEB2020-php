@@ -9,7 +9,7 @@
 
 <?php include './mult-table.php';?>
 
-<form>
+<form action="./valid-form.php" method="POST">
     <label for="course-title">Име на предмета</label>
     <input type="text" id="course-title" name="title">
 	<br>
@@ -19,21 +19,18 @@
     <label for="description">Описание</label>
     <input type="text" id="description" name="description">
 	<br>
-	Група
-	<br>
-	<label> <input type="radio" name="group" value="math">М</label>
-	<br>
-	<label> <input type="radio" name="group" value="appl-math">ПМ</label>
-	<br>
-	<label> <input type="radio" name="group" value="base-cs">ОКН</label>
-	<br>
-	<label> <input type="radio" name="group" value="core-cs">ЯКН</label>
+	<label for="group">Група:</label>
+	<select id="group" name="group">
+            <option value="math">М</option>
+            <option value="appl-math">ПМ</option>
+            <option value="base-cs">ОКН</option>
+            <option value="core-cs">ЯКН</option>
+    </select>
 	<br>
 	<label for="credits">Кредити</label>
 	<input type="number" id="credits" name="credits">
+	<input type="submit" value="Submit">
 </form>
-
-<?php include './valid-form.php';?>
 
 </body>
 </html>
