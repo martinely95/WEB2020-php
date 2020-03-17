@@ -1,0 +1,16 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fieldset-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+.input-container {
+    margin: 10px;
+}
