@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>JAVA_01</title>
+		<script src="JavaScript_01.js"></script>
+		
+		<style>
+			body
+			{
+				text-align: center;
+			}
+			form
+			{
+				border: 2px solid black;
+				background-color:yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<form method="post" action="register.php" onsubmit="return validate()">
+		<h1> LOGIN </h1>
+
+		<label for="Username">Потребителско име: </label>
+		<input type="text" id="Username" name="username"><br>
+		<label id="invalidUsername"></label><br>
+		
+		<label for="Password">Парола: </label>
+		<input type="text" id="Password" name="passwd"><br>
+		<label id="invalidPassword"></label><br>
+		
+		<label for="Confirm_Password">Повтори паролата: </label>
+		<input type="text" id="Confirm_Password" name="password_conf"><br>
+		<label id="invalidConfirmPassword"></label><br>
+			
+		<h2><input type="submit" value="Submit"><h2>
+	</body>
+</html>
