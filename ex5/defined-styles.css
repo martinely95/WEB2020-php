@@ -14,3 +14,7 @@
 .input-container {
     margin: 10px;
 }
+
+p.error {
+    color: darkred;
+}

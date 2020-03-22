@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form name="userInput" id="userInputForm" onsubmit="validate()">
+<form name="userInput" id="userInputForm" onsubmit="return validate()" action="backend.php" method="post">
     <div class="form-container">
         <fieldset class="fieldset-container">
             <legend>Input</legend>
@@ -38,6 +38,8 @@
                        required/>
             </div>
         </fieldset>
+
+        <p id="inputValidationResult" class="error"></p>
 
         <div>
             <button>Submit</button>
