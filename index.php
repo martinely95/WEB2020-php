@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 	<title>Get ready to hack</title>
@@ -74,7 +74,7 @@
   var_dump($_SERVER);
   echo "<br/>";
   echo "<br/>";
-  var_dump($_GLOBALS);
+  var_dump($GLOBALS);
   echo "<br/>";
   echo "<br/>";
   var_dump($_SESSION);
