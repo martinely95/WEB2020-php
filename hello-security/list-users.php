@@ -18,10 +18,6 @@ $sql = "SELECT * from person where email = '" . $_SESSION["email"] . "';";
 $resultSet = $conn->query($sql) or die("Failed to query from DB!");
 $firstrow = $resultSet->fetch(PDO::FETCH_ASSOC) or die ("User not found.");
 
-if (strcmp($firstrow['role'], 'admin') != 0) {
-    die("Authorization failed. Sorry " . $firstrow['firstname'] . ". Only admins are allowed");
-}
-
 $sql = "SELECT * from person;";
 
 $resultSet = $conn->prepare($sql);
